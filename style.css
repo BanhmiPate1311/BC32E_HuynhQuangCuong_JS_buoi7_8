@@ -1,5 +1,18 @@
+body {
+  background-image: url(https://www.fffcvn.net/wp-content/uploads/2017/04/FXdcfOo.jpg);
+  background-size: cover;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+}
+
 p {
   margin-bottom: 0;
+}
+
+.section-center {
+  width: 70vw;
+  margin: 0 auto;
+  max-width: 1170px;
 }
 
 /* hide text */
@@ -9,7 +22,10 @@ p {
   padding: 10px;
   margin: 1px;
   border: none;
-  /* border-top: 0.1px solid grey; */
+}
+
+.show-text {
+  transition: all 0.3s linear;
 }
 
 .show-text .homework-title {
@@ -33,13 +49,6 @@ p {
 
 .show-text .homework-text {
   display: block;
-  transition: all 1s linear;
-}
-
-.section-center {
-  width: 70vw;
-  margin: 0 auto;
-  max-width: 1170px;
 }
 
 .homework-title {
@@ -52,13 +61,4 @@ p {
 .homework-text {
   padding: 1rem 10px 1.5rem 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.homework-btn {
-  /* font-size: 1.5rem;
-  background: transparent;
-  border-color: transparent;
-  cursor: pointer;
-  color: var(--clr-gold); */
-  transition: all 0.3s linear;
 }

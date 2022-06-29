@@ -64,9 +64,13 @@ document.getElementById("btnDemSoDuong").onclick = function () {
 //Bài 3: Tìm số nhỏ nhất
 document.getElementById("btnMin").onclick = function () {
   //output: min: number
-  var min = null;
+  var min = arrNumber[0];
   //progress
-  min = Math.min.apply(0, arrNumber);
+  for (var i = 1; i < arrNumber.length; i++) {
+    if (min > arrNumber[i]) {
+      min = arrNumber[i];
+    }
+  }
   //in kết quả ra giao diện
   document.getElementById("soMin").innerHTML = "Số nhỏ nhất trong mảng: " + min;
 };
