@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập buổi 7_8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Main style -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="section-center">
+      <div class="row form-group mt-3">
+        <div class="col-4">
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Nhập số n"
+            id="nhapSo"
+          />
+        </div>
+        <div class="col-4">
+          <button class="btn btn-success" id="themSo">Thêm số</button>
+        </div>
+      </div>
+      <div class="alert alert-success mb-4" id="arrNumber">
+        Thêm giá trị vào mảng
+      </div>
+
+      <div class="homework">
+        <button type="button" class="homework-title homework-btn">
+          <p>1:Tổng số dương</p>
+          <span class="angle-icon">
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
+          <!-- <span class="minus-icon">
+            <i class="fa-solid fa-angle-up"></i>
+          </span> -->
+        </button>
+
+        <div class="homework-text">
+          <div class="form-group">
+            <button class="btn btn-primary" id="btnTongSoDuong">
+              Tính tổng
+            </button>
+          </div>
+          <div class="alert alert-success" id="tongSoDuong">
+            Bấm vào nút đi!
+          </div>
+        </div>
+      </div>
+
+      <div class="homework">
+        <button type="button" class="homework-title homework-btn">
+          <p>2: Đếm số dương</p>
+          <span class="angle-icon">
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
+          <!-- <span class="minus-icon">
+            <i class="fa-solid fa-angle-up"></i>
+          </span> -->
+        </button>
+
+        <div class="homework-text">
+          <div class="form-group">
+            <button class="btn btn-primary" id="btnDemSoDuong">Đếm số</button>
+          </div>
+          <div class="alert alert-success" id="demSoDuong">Bấm vào nút đi!</div>
+        </div>
+      </div>
+
+      <div class="homework">
+        <button type="button" class="homework-title homework-btn">
+          <p>3: Tìm số nhỏ nhất</p>
+          <span class="angle-icon">
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
+          <!-- <span class="minus-icon">
+            <i class="fa-solid fa-angle-up"></i>
+          </span> -->
+        </button>
+
+        <div class="homework-text">
+          <div class="form-group">
+            <button class="btn btn-primary" id="btnMin">Tìm số nhỏ nhất</button>
+          </div>
+          <div class="alert alert-success" id="soMin">Bấm vào nút đi!</div>
+        </div>
+      </div>
+
+      <div class="homework">
+        <button type="button" class="homework-title homework-btn">
+          <p>4: Tìm số dương nhỏ nhất</p>
+          <span class="angle-icon">
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
+          <!-- <span class="minus-icon">
+            <i class="fa-solid fa-angle-up"></i>
+          </span> -->
+        </button>
+
+        <div class="homework-text">
+          <div class="form-group">
+            <button class="btn btn-primary" id="btnDuongMin">
+              Tìm số nhỏ nhất
+            </button>
+          </div>
+          <div class="alert alert-success" id="soDuongMin">Bấm vào nút đi!</div>
+        </div>
+      </div>
+
+      <div class="homework">
+        <button type="button" class="homework-title homework-btn">
+          <p>5: Tìm số chẵn cuối cùng</p>
+          <span class="angle-icon">
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
+          <!-- <span class="minus-icon">
+            <i class="fa-solid fa-angle-up"></i>
+          </span> -->
+        </button>
+
+        <div class="homework-text">
+          <div class="form-group">
+            <button class="btn btn-primary" id="btnLastEven">
+              Tìm số chẵn cuối cùng
+            </button>
+          </div>
+          <div class="alert alert-success" id="lastEven">Bấm vào nút đi!</div>
+        </div>
+      </div>
+
+      <div class="homework">
+        <button type="button" class="homework-title homework-btn">
+          <p>6: Đổi chỗ</p>
+          <span class="angle-icon">
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
+          <!-- <span class="minus-icon">
+            <i class="fa-solid fa-angle-up"></i>
+          </span> -->
+        </button>
+
+        <div class="homework-text">
+          <div class="row form-group mt-3">
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Nhập vị trí số 1"
+                id="pos_1"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Nhập vị trí số 2"
+                id="pos_2"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" id="btnChange">Đổi chỗ</button>
+          </div>
+          <div class="alert alert-success" id="changedArr">Bấm vào nút đi!</div>
+        </div>
+      </div>
+
+      <div class="homework">
+        <button type="button" class="homework-title homework-btn">
+          <p>7: Sắp xếp tăng dần</p>
+          <span class="angle-icon">
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
+          <!-- <span class="minus-icon">
+            <i class="fa-solid fa-angle-up"></i>
+          </span> -->
+        </button>
+
+        <div class="homework-text">
+          <div class="form-group">
+            <button class="btn btn-primary" id="btnSortUp">Sắp xếp</button>
+          </div>
+          <div class="alert alert-success" id="sortUp">Bấm vào nút đi!</div>
+        </div>
+      </div>
+
+      <div class="homework">
+        <button type="button" class="homework-title homework-btn">
+          <p>8: Tìm số nguyên tố đầu tiên</p>
+          <span class="angle-icon">
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
+          <!-- <span class="minus-icon">
+            <i class="fa-solid fa-angle-up"></i>
+          </span> -->
+        </button>
+
+        <div class="homework-text">
+          <div class="form-group">
+            <button class="btn btn-primary" id="timSoNT">
+              Tìm số nguyên tố
+            </button>
+          </div>
+          <div class="alert alert-success" id="soNTDau">Tìm ở đây!</div>
+        </div>
+      </div>
+
+      <div class="homework">
+        <button type="button" class="homework-title homework-btn">
+          <p>9: Đếm số nguyên</p>
+          <span class="angle-icon">
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
+          <!-- <span class="minus-icon">
+            <i class="fa-solid fa-angle-up"></i>
+          </span> -->
+        </button>
+
+        <div class="homework-text">
+          <div class="row form-group mt-3">
+            <div class="col-4">
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Nhập số n"
+                id="nhapSo2"
+              />
+            </div>
+            <div class="col-4">
+              <button class="btn btn-success" id="btnThemSo2">Thêm số</button>
+            </div>
+          </div>
+          <div class="alert alert-success" id="arrNumber2">
+            Thêm giá trị vào mảng mới
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" id="demSN">Đếm số nguyên</button>
+          </div>
+          <div class="alert alert-success" id="soNguyen">Tìm ở đây!</div>
+        </div>
+      </div>
+
+      <div class="homework">
+        <button type="button" class="homework-title homework-btn">
+          <p>10: So sánh số lượng số dương và âm</p>
+          <span class="angle-icon">
+            <i class="fa-solid fa-angle-down"></i>
+          </span>
+          <!-- <span class="minus-icon">
+            <i class="fa-solid fa-angle-up"></i>
+          </span> -->
+        </button>
+
+        <div class="homework-text">
+          <div class="form-group">
+            <button class="btn btn-primary" id="btnSoSanh">So sánh</button>
+          </div>
+          <div class="alert alert-success" id="soSanh">So sánh ở đây!</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
