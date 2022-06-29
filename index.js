@@ -18,6 +18,18 @@ function handleCollapse(element) {
   element.classList.toggle("show-text");
 }
 
+document.getElementById("hello").onclick = function () {
+  document.getElementById("cucCu").style.display = "block";
+
+  document.getElementById("hello").style.display = "none";
+};
+
+document.getElementById("out").onclick = function () {
+  document.getElementById("cucCu").style.display = "none";
+
+  document.getElementById("hello").style.display = "block";
+};
+
 var arrNumber = [];
 document.getElementById("themSo").onclick = function () {
   //input so:number
