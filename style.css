@@ -1,7 +1,8 @@
 body {
-  background-image: url(https://www.fffcvn.net/wp-content/uploads/2017/04/FXdcfOo.jpg);
+  background-image: url(https://wallpaperaccess.com/full/1260257.jpg);
   background-size: cover;
-  /* background-position: center; */
+  background-attachment: fixed;
+  background-position: center;
   /* background-repeat: no-repeat; */
 }
 
@@ -27,17 +28,15 @@ p {
   display: none;
 }
 
-/* hide text */
-
 .homework-title {
   background-color: #e1f7e1;
   padding: 10px;
   margin: 1px;
   border: none;
-}
-
-.show-text {
-  transition: all 0.3s linear;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  width: 100%;
 }
 
 .show-text .homework-title {
@@ -55,22 +54,15 @@ p {
   transform: rotate(-180deg);
 }
 
+/* hide text */
+
 .homework-text {
   display: none;
+  padding: 1rem 10px 1.5rem 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.3s linear;
 }
 
 .show-text .homework-text {
   display: block;
-}
-
-.homework-title {
-  display: flex;
-  justify-content: space-between;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.homework-text {
-  padding: 1rem 10px 1.5rem 10px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
