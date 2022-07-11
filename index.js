@@ -1,3 +1,5 @@
+document.addEventListener("contextmenu", (event) => event.preventDefault());
+
 const questions = document.querySelectorAll(".homework");
 
 for (var i = 0; i < questions.length; i++) {
